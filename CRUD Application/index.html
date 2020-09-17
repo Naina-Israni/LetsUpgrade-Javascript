@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Application in JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="modal" onclick="closeModal(event)">
+      <div class="modalChild">
+        <div class="form">
+          <form onsubmit="updateCelebs(event)">
+            <input type="text" id="upname" placeholder="Name" required />
+            <input type="number" id="upage" placeholder="Age" required />
+            <input type="text" id="uptitle" placeholder="Title" required />
+            <input type="text" id="upfrom" placeholder="From" required />
+            <button type="submit">Update Celebrity</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="app">
+      <h1>Celebrities</h1>
+      <div class="form">
+        <form onsubmit="addCelebs(event)">
+          <input type="text" id="name" placeholder="Name" required />
+          <input type="number" id="age" placeholder="Age" required />
+          <input type="text" id="title" placeholder="Title" required />
+          <input type="text" id="from" placeholder="From" required />
+          <button type="submit">Add Celebrity</button>
+        </form>
+      </div>
+      <div class="searchBox">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search Celebrity By Name"
+          onkeyup="searchCeleb()"
+        />
+      </div>
+      <div class="tabledata">
+        <table class="table">
+          <thead>
+            <th>Sr no.</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Title</th>
+            <th>From</th>
+            <th>Actions</th>
+          </thead>
+          <tbody id="data"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="project.js"></script>
+   
+  </body>
+</html>
