@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Employee</h1>
+        <input type="text" id="searchName" placeholder="Search By Name" onkeyup="searchByName()"/>
+        <input type="text" id="searchCity" placeholder="Search By City" onkeyup="searchByCity()"/>
+        <div class="table">
+            <table>
+                <thead>
+                 <th>Srno.</th>
+                 <th>Name</th>
+                 <th>Age</th>
+                 <th>City</th>
+                 <th>Salary</th>
+                 <th>Actions</th>
+                </thead>
+                <tbody id="data">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
