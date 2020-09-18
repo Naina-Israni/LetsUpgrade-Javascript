@@ -1,0 +1,32 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+.app{
+    width:80%;
+    height:100vh;
+    margin-left:10%;
+    margin-top:30px;
+    padding: 20px;
+    background-color: antiquewhite;
+    
+}
+.table{
+    margin:20px;
+}
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+table,th,tr,td{
+    border:1px solid black;
+}
+th,tr,td{
+    text-align: center;
+    padding:10px;
+}
+input{
+    margin:10px;
+    height:20px;
+    text-indent: 15px;;
+}
