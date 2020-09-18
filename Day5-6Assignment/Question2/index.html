@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Bus</h1>
+        <div class="form">
+            <form onsubmit="addBus(event)">
+              <input type="text" id="name" placeholder="Name" required />
+              <input type="text" id="source" placeholder="Source" required />
+              <input type="text" id="destination" placeholder="Destination" required />
+              <input type="text" id="number" placeholder="Number" required />
+              <input type="number" id="passanger" placeholder="Passanger" required />
+              <input type="number" id="capacity" placeholder="Capacity" required />
+              <button type="submit">Add Bus</button>
+            </form>
+          </div>
+          <div class="searchBox">
+            <input
+              type="text"
+              id="searchSource"
+              placeholder="Search Bus By Source"
+              onkeyup="searchSource()"
+            />
+          </div>
+          <div class="searchBox">
+          <input
+              type="text"
+              id="searchDesti"
+              placeholder="Search Bus By Source"
+              onkeyup="searchDesti()"
+            />
+        </div>
+          <div class="table">
+            <table>
+                <thead>
+                  <th>Name</th>
+                  <th>Source</th>
+                  <th>Destination</th>
+                  <th>Number</th>
+                  <th>Passanger</th>
+                  <th>Capacity</th>
+                </thead>
+                <tbody id="data">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
